@@ -1,0 +1,12 @@
+{
+  "name": "devcontainer_test",
+  "image": "ddosakura/hakke:1.0.0-beta.0",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+        "editor.fontLigatures": true
+      }
+    }
+  }
+}
