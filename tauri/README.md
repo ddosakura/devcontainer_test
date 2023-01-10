@@ -22,8 +22,8 @@ apt list --installed | grep -E -i -w 'libwebkit2gtk-4.0-dev|build-essential|curl
 
 docker exec -ti <id> /bin/bash
 apt update
-#  –no-install-recommends 参数来避免安装非必须的文件，从而减小镜像的体积
-apt install -y –no-install-recommends libwebkit2gtk-4.0-dev \
+#  --no-install-recommends 参数来避免安装非必须的文件，从而减小镜像的体积
+apt install -y --no-install-recommends libwebkit2gtk-4.0-dev \
     libgtk-3-dev \
     libayatana-appindicator3-dev \
     librsvg2-dev

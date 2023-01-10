@@ -1,4 +1,6 @@
-FROM ddosakura/hakke:1.0.0
+FROM ddosakura/hakke:1.1.0
+
+USER root
 
 # https://github.com/devcontainers/features/tree/main/src/desktop-lite#installing-a-browser
 
@@ -13,4 +15,6 @@ FROM ddosakura/hakke:1.0.0
 # 或 google-chrome --no-sandbox
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && curl -sSL https://dl.google.com/linux/direct/google-chrome-stable_current_$(dpkg --print-architecture).deb -o /tmp/chrome.deb \
-    && apt-get -y install /tmp/chrome.deb
+    && apt-get -y install --no-install-recommends /tmp/chrome.deb
+
+USER vscode
