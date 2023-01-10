@@ -1,4 +1,6 @@
-# System Dependencies
+# Tauri
+
+## System Dependencies
 
 ```bash
 # https://tauri.app/v1/guides/getting-started/prerequisites
@@ -27,4 +29,10 @@ apt install -y --no-install-recommends libwebkit2gtk-4.0-dev \
     libgtk-3-dev \
     libayatana-appindicator3-dev \
     librsvg2-dev
+```
+
+## Quick Start
+
+```bash
+sh <(curl https://create.tauri.app/sh)
 ```
