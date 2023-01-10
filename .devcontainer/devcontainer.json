@@ -1,6 +1,11 @@
 {
   "name": "devcontainer_test",
-  "image": "ddosakura/hakke:1.0.0",
+  "dockerFile": "Dockerfile",
+  "runArgs": ["--shm-size=1g"],
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  // "forwardPorts": [6080],
   "customizations": {
     "vscode": {
       "settings": {
